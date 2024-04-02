@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riara Trips Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz" id="dubai-quiz">
+        <h2>Dubai Trip Quiz</h2>
+        
+        <div class="question" id="dubai-question"></div>
+        <div id="dubai-choices">
+            <input type="radio" name="dubai-choice" value="b"> Burj Khalifa<br>
+            <input type="radio" name="dubai-choice" value="a"> Empire State Building<br>
+            <input type="radio" name="dubai-choice" value="c"> Eiffel Tower<br>
+            <input type="radio" name="dubai-choice" value="d"> Petronas Towers<br>
+        </div>
+        <button onclick="checkAnswer('dubai')">Submit</button>
+        <p id="result-dubai"></p>
+        <progress id="progress-dubai" max="0" value="0"></progress>
+    </div>
+
+    <div class="quiz" id="arusha-quiz">
+        <h2>Arusha Trip Quiz</h2>
+        <div class="question" id="arusha-question"></div>
+        <div id="arusha-choices">
+            <input type="radio" name="arusha-choice" value="b"> Mount Kilimanjaro<br>
+            <input type="radio" name="arusha-choice" value="a"> Mount Meru<br>
+            <input type="radio" name="arusha-choice" value="c"> Mount Oldoinyo Lengai<br>
+            <input type="radio" name="arusha-choice" value="d"> Mount Longido<br>
+        </div>
+        <button onclick="checkAnswer('arusha')">Submit</button>
+        <p id="result-arusha"></p>
+        <progress id="progress-arusha" max="0" value="0"></progress>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

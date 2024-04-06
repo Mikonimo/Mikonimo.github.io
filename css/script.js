@@ -116,7 +116,7 @@ const loadQuiz = () => {
     deselectAnswers();
     const currentQuizData = selectedQuizData[currentQuiz];
     questionElement.innerText = currentQuizData.question;
-    a_^text.innerText = currentQuizData.a;
+    a_text.innerText = currentQuizData.a;
     b_text.innerText = currentQuizData.b;
     c_text.innerText = currentQuizData.c;
     d_text.innerText = currentQuizData.d;
@@ -130,7 +130,7 @@ const submitQuiz = () => {
         if (currentQuiz < selectedQuizData.length) loadQuiz();
         else {
             quiz.innerHTML = `
-                <h2>You answered ${score}/${selectedQuizData.length} questions correctly</h2>
+                <h2 style="color: purple;">You answered ${score}/${selectedQuizData.length} questions correctly</h2>
                 <button onclick="location.reload()">Try the second quiz</button>
             `;
         }
@@ -148,7 +148,8 @@ const startDubaiQuiz = () => {
 const startArushaQuiz = () => {
     chooseQuizContainer.style.display = "none";
     quizContainer.style.display = "block"; // Show the quiz section
-    loadQuiz(arushaQuizData);
+    selectedQuizData = arushaQuizData;
+    loadQuiz(selectedQuizData);
 };
 
 chooseDubaiButton.addEventListener("click", startDubaiQuiz);

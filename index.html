@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Document</title>
+    <title>Riara Student Academic Trips</title>
+    <!--to enable the tailwind custom styles remove the comment tags below-->
+    <!--<link rel="stylesheet" href="output.css">-->
     <link rel="stylesheet" type="text/css" href="webd.css">
     <script src="script.js" defer></script>
     
 </head>
 <body>
+    <!--the main menu, holding the logo and menu items-->
     <nav id="bg-img">
         <div class="logoHolder">
-            <img id="logo" src="logo.riara.jpg">
+            <img id="logo" src="logo.riara.jpg" alt="riara university logo">
         </div>
         
             <ul class="menu">
@@ -23,13 +26,15 @@
             </ul>
 
     </nav>
+    <!--it holds the banner image-->
     <main class="mn">
         <div id="bannerImage">         
            
         </div>
+        <!--this sections holds the User information and the table information-->
         <div class="infoA">
-            <div id="Uinfo">
-                <p class="info">
+            <div id="Uinfo" class="mt-8 p-2"><!--using some tailwind styling-->
+                <p  class="text-base">
                     Dear Riara Students,
 
                     Exciting adventures await you this year with two incredible trips on offer: one to Dubai and the other to Arusha. In Dubai, you'll immerse yourselves in the glitz and glamour of this vibrant city, exploring iconic landmarks such as the Burj Khalifa, the Palm Jumeirah, and the Dubai Mall. You'll also have the opportunity to experience the rich culture and heritage of the region by visiting the historic Al Fahidi Fort and indulging in a traditional Arabian dinner under the starlit desert sky. The Dubai trip will cost approximately $1400 per student, inclusive of accommodation, transportation, and guided tours.
@@ -39,99 +44,98 @@
                     Don't miss out on these unforgettable journeys filled with cultural immersion, adventure, and lifelong memories. Secure your spot now and get ready for the experience of a lifetime! 
                 </p>
             </div>
-            <div class="Tinfo">
+            <div class="Tinfo p-2">
+                <!--the first table-->
                 <div id="Dtable">
                     <table>
-                        <tr>
-                            <th class="trip-title" colspan="3">Dubai Trip - Total Cost: $1400 per Student</th>
+                        <caption class="trip-title">Dubai Trip - Total Cost: $1400 per Student</caption>
                         <tr class="skip">
                             <th>Activity/Area Visited</th>
                             <th>Cost Allocation</th>
                             <th>Schedule</th>
                         </tr>
-                        <tr>
+                        <tr class="p-0">
                             <td>Accommodation</td>
                             <td>$500</td>
                             <td>5 nights stay in Dubai</td>
                         </tr>
-                        <tr class="skip">
+                        <tr class="p-0 skip">
                             <td>Burj Khalifa</td>
                             <td>$100</td>
                             <td>Day 1: Afternoon</td>
                         </tr>
-                        <tr>
+                        <tr class="p-0">
                             <td>Palm Jumeirah</td>
                             <td>Included in transport costs</td>
                             <td>Day 2: Morning</td>
                         </tr>
-                        <tr class="skip">
+                        <tr class="p-0 skip">
                             <td>Dubai Mall</td>
                             <td>Free entry, expenses vary</td>
                             <td>Day 2: Afternoon</td>
                         </tr>
-                        <tr>
+                        <tr class="p-0">
                             <td>Al Fahidi Fort</td>
                             <td>$50</td>
                             <td>Day 3: Morning</td>
                         </tr>
-                        <tr class="skip">
+                        <tr class="p-0 skip">
                             <td>Desert Safari & Dinner</td>
                             <td>$150</td>
                             <td>Day 4: Evening</td>
                         </tr>
-                        <tr>
+                        <tr class="p-0">
                             <td>Transportation</td>
                             <td>$400</td>
                             <td>Throughout the trip</td>
                         </tr>
-                        <tr class="skip">
+                        <tr class="p-0 skip">
                             <td>Miscellaneous</td>
                             <td>$200</td>
                             <td>Souvenirs, extra activities</td>
                         </tr>
                     </table>
                 </div>
+                <!--the second table-->
                 <div id="Atable">
                     <table>
-                        <tr>
-                            <th class="trip-title" colspan="3">Arusha Trip - Total Cost: $250 per Student</th>
-                        </tr>
-                        <tr class="skip">
+                        <caption class="trip-title">Arusha Trip - Total Cost: $250 per Student</caption>
+                        <tr class="p-0 skip">
                             <th>Activity/Area Visited</th>
                             <th>Cost Allocation</th>
                             <th>Schedule</th>
                         </tr>
-                        <tr>
+                        <tr class="p-0">
                             <td>Accommodation</td>
                             <td>$80</td>
                             <td>6 nights stay in and around Arusha</td>
                         </tr>
-                        <tr class="skip">
+                        <tr class="p-0 skip">
                             <td>Serengeti National Park</td>
                             <td>$50</td>
                             <td>Day 2 & 3: Full days</td>
                         </tr>
-                        <tr>
+                        <tr class="p-0">
                             <td>Ngorongoro Crater</td>
                             <td>$30</td>
                             <td>Day 4: Full day</td>
                         </tr>
-                        <tr class="skip">
+                        <tr class="p-0 skip">
                             <td>Arusha Markets</td>
                             <td>Included in transport costs</td>
                             <td>Day 5: Morning</td>
                         </tr>
-                        <tr>
+                        <tr classs="p-0">
                             <td>Maasai Cultural Visit</td>
                             <td>$10</td>
                             <td>Day 5: Afternoon</td>
                         </tr>
-                        <tr class="skip">
+                        <tr class=" p-0 skip">
                             <td>Transportation</td>
                             <td>$60</td>
                             <td>Throughout the trip</td>
                         </tr>
-                        <tr>
+                        <tr class="p-0">
                             <td>Miscellaneous</td>
                             <td>$20</td>
                             <td>Souvenirs, extra activities</td>
@@ -143,6 +147,7 @@
             </div>
         </div> 
         <hr>
+        <!--the javascript form validation code-->
         <script type="text/javascript">
             function validate() {
                 if(document.myForm.Fname.value == "") {
@@ -207,6 +212,7 @@
                 
             }
         </script>
+        <!--the form-->
         <h2 class="pform">Book now by filling the form below.</h2>
         <div class="form">
             <form action="" name="myForm" onsubmit="return(validate());" class="formInfo">
@@ -236,7 +242,7 @@
                 </div>
                 <div class="form-group">
                     <label for="dob">Date of Birth</label><br>
-                    <input type="date" id="dob" name="DoB">
+                    <input class="text-black" type="date" id="dob" name="DoB">
                 </div>
                 <div class="form-group">
                     <label for="file">Passport Photo</label><br>
@@ -244,7 +250,7 @@
                 </div>
                 <div class="form-group">
                     <label for="school">Your School</label><br>
-                    <select name="school" id="school">
+                    <select class="appearance-auto text-black" name="school" id="school">
                         <option value="">Choose your School</option>
                         <option value="SCS">School of Computing Sciences</option>
                         <option value="SOB">School of Business</option>
@@ -282,20 +288,21 @@
                     <fieldset id="lg">
                     <legend >Process Information</legend><br>
                     <div id="sub">
-                    <input type="submit" value="Submit">
+                    <input class=" appearance-auto text-black bg-white p-px" type="submit" value="Submit">
                     </div>
                     <div id="sub2">
-                    <input type="reset" value="Clear the Form" class="right">
+                    <input class="appearance-auto text-black bg-white p-px" type="reset" value="Clear the Form" class="right">
                     </div>
                     </fieldset>
                 </div>
                 </form>
         </div>
+        <!--the quiz-->
         <div id="quiz">
             
             <div class="quiz_c">
                 <div id="chooseQuizContainer">
-                    <h2>Win a 10% Discount Voucher</h2>
+                    <h2 class="appearance-auto">Win a 10% Discount Voucher</h2>
                     <p >Participate in our quizzes for a chance to win a 10% discount voucher for our Dubai or Arusha trip! Remember,
                          you can only win one voucher, not both. The winner will be selected randomly, so don't miss out on this opportunity to make your adventure even more affordable!</p>
                     <div id="but">

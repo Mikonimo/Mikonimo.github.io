@@ -1,3 +1,4 @@
+/*the object below is containing the first dubai quiz in the format 'key: value' pairs*/
 const dubaiQuizData = [
     {
         question: "What is the tallest building in the world located in Dubai?",
@@ -40,7 +41,7 @@ const dubaiQuizData = [
         correct: "c"
     }
 ];
-
+/*the object below contains data about the arusha quiz, with the 'key: value' pairs */
 const arushaQuizData = [
     {
         question: "What is the name of the largest volcano in Tanzania, located in the Ngorongoro Conservation Area?",
@@ -85,7 +86,7 @@ const arushaQuizData = [
 ];
 
 const quiz = document.getElementById("quiz");
-const answerElements = document.querySelectorAll(".answer");
+const answerElements = document.querySelectorAll(".answer");/*it select all answer selected by the user*/
 const questionElement = document.getElementById("question");
 const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");

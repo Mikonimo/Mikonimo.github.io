@@ -1,3 +1,77 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background: url('./media/panorama-view2.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+header h1 {
+    font-size: 3em;
+}
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+nav {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+nav a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+section {
+    padding: 20px;
+    text-align: center;
+}
+.services, .gallery, .video, .contact {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+.services h2, .gallery h2, .video h2, .contact h2 {
+    color: #050505;
+}
+.gallery img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banner{
+    background: url('./media/sky.jpg') no-repeat center center/cover;
+}
+.contact {
+    background: url('./media/panorama-view.jpg') no-repeat center center/cover;
+    color: #ffffff;
+}
+.video iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 8px;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
